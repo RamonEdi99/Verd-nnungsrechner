@@ -3,9 +3,6 @@ matpotlib
 
 import json
 
-
-from pillow import Image
-
 # Funktion zum Laden der Adressliste aus einer JSON-Datei
 def load_data(filename):
    if os.path.isfile(filename):
