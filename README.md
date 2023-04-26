@@ -1,2 +1,2 @@
-# Verd-nnungsrechner
+# Verduennungsrechner
 APP zum Verdünnungen berechnen
