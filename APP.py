@@ -1,6 +1,6 @@
 import json
 
-import pandas as pd
+
 from Pillow import Image
 
 # Funktion zum Laden der Adressliste aus einer JSON-Datei
