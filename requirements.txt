@@ -2,7 +2,7 @@ pandas
 matpotlib
 
 
-import streamlit as st
+
 import pandas as pd
 from pillow import Image
 
