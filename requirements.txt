@@ -2,8 +2,6 @@ pandas
 matpotlib
 
 
-
-import pandas as pd
 from pillow import Image
 
 # Funktion zum Laden der Adressliste aus einer JSON-Datei
