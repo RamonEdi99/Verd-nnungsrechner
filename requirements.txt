@@ -2,7 +2,7 @@ pandas
 matpotlib
 
 
-from PIL import Image
+from pillow import Image
 
 # Funktion zum Laden der Adressliste aus einer JSON-Datei
 def load_data(filename):
