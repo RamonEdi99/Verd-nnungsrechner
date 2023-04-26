@@ -1,7 +1,7 @@
 import json
 
 
-from Pillow import Image
+from PIL import Image
 
 # Funktion zum Laden der Adressliste aus einer JSON-Datei
 def load_data(filename):
