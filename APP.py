@@ -181,6 +181,5 @@ def app():
 
         main()
 
-# App starten
-app()
+
 
