@@ -1,6 +1,8 @@
 pandas
 matpotlib
 
+import streamlit as st
+import pandas as pd
 import json
 
 # Funktion zum Laden der Adressliste aus einer JSON-Datei
