@@ -1,7 +1,8 @@
-
+import os
+import json
 import streamlit as st
 import pandas as pd
-import json
+from PIL import Image
 
 # Funktion zum Laden der Adressliste aus einer JSON-Datei
 def load_data(filename):
@@ -181,5 +182,5 @@ def app():
 
         main()
 
-
-
+# App starten
+app()
