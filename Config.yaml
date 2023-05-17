@@ -1,0 +1,14 @@
+credentials:
+  usernames:
+    Rechner:
+      email: samuel.wehrli@gmail.com
+      name: Ramonedi99
+      password: $2b$12$8Z7KsfaEGNnqW0u3xaH.YeSQSqsGO6C7v6nB79ulWgndyq0vWz21G
+    guest:
+      name: guest
+      password: 
+cookie:
+  expiry_days: 30  # number of days until password is asked again
+  key: JgDyEoKUNItM5prxo194jDeLYzVzmYE6 # Must be string, use https://randomkeygen.com/
+  name: streamlitcookie
+  
