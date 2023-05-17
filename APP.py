@@ -34,9 +34,7 @@ elif authentication_status == None:
     st.warning('Please enter your username and password')
     st.stop()
     
-data = load_key(api_key, bin_id, username)  
-st.write(data) 
-    
+data = load_key(api_key, bin_id, username) 
     
     
 
@@ -110,7 +108,6 @@ def app():
                            )
 
    data = load_data("data.json")
-   st.write(type(data))
 
 
    if page == options[0]:
