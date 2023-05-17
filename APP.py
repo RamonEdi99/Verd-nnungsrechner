@@ -12,8 +12,6 @@ jsonbin_secrets = st.secrets["jsonbin"]
 api_key = jsonbin_secrets["api_key"]
 bin_id = jsonbin_secrets["bin_id"]
 
-st.write(bin_id)
-
 # -------- user login --------
 with open('config.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
