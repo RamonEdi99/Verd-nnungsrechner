@@ -3,7 +3,7 @@ import json
 import streamlit as st
 import pandas as pd
 from PIL import Image
-from Jasonbin import load_key, save_key
+from jasonbin import load_key, save_key
 import yaml
 from yaml.loader import SafeLoader
 import streamlit_authenticator as stauth
