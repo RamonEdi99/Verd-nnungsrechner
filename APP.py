@@ -13,7 +13,7 @@ api_key = jsonbin_secrets["api_key"]
 bin_id = jsonbin_secrets["bin_id"]
 
 # Definieren App Name und Icon
-st.set_page_config(page_title="Verdünnungsrechner", page_icon=":test tube:")
+st.set_page_config(page_title="Verdünnungsrechner", page_icon=":testtube:")
 
 # -------- user login --------
 with open('config.yaml') as file:
