@@ -12,6 +12,9 @@ jsonbin_secrets = st.secrets["jsonbin"]
 api_key = jsonbin_secrets["api_key"]
 bin_id = jsonbin_secrets["bin_id"]
 
+# Definieren App Name und Icon
+st.set_page_config(page_title="Verdünnungsrechner", page_icon=":microscope:")
+
 # -------- user login --------
 with open('config.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
@@ -128,7 +131,7 @@ def app():
             
             
    
-   if page == options[1]:
+       if page == options[1]:
        data = load_data("data.json")
        st.subheader("Archiv")
 
@@ -146,7 +149,7 @@ def app():
 
        st.table(df)
       
-    if page == options[2]:
+       if page == options[2]:
 
         # Define the dictionary of substances and their corresponding hazard symbols
         substances = {
