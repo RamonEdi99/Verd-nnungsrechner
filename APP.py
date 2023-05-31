@@ -109,8 +109,10 @@ def app():
 
    data = load_data("data.json")
 
+   tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
 
-   if page == options[0]:
+   with tab1:
+   #if page == options[0]:
 
        seite = pages()
 
@@ -125,8 +127,10 @@ def app():
        
        if st.button("Speichern"):
            save_data(data, "data.json")
-
-   if page == options[1]:
+            
+            
+   with tab2:
+  # if page == options[1]:
        data = load_data("data.json")
        st.subheader("Archiv")
 
