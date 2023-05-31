@@ -93,26 +93,24 @@ def pages():
    return [stoffname, endvolumen_ml, verdunnungsmittel_menge_ul, benoetigte_menge_stoff_ul, bemerkungen]
 
    # # Submit-Button, um die eingegebenen Daten zu speichern und die Berechnungen durchzuführen
-   # if st.button("Berechnung speichern"):
-   #     return [stoffname, endvolumen_ml, verdunnungsmittel_menge_ul, benoetigte_menge_stoff_ul, bemerkungen]
+    if st.button("Berechnung speichern"):
+        return [stoffname, endvolumen_ml, verdunnungsmittel_menge_ul, benoetigte_menge_stoff_ul, bemerkungen]
 
 # Streamlit-App
 def app():
    st.title("Verdünnungsrechner für Deine Verdünnungsreihe")
 
    # Sidebar
-   #options = ["Neue Berechnung", "Archiv", "Gefahrensymbole"]
+   options = ["Neue Berechnung", "Archiv", "Gefahrensymbole"]
 
-  # page = st.sidebar.radio("Seite auswählen", 
- #                          options
-  #                         )
+   page = st.sidebar.radio("Seite auswählen", 
+                           options
+                           )
 
    data = load_data("data.json")
 
-   tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
-
-   with tab1:
-   #if page == options[0]:
+ 
+   if page == options[0]:
 
        seite = pages()
 
@@ -129,8 +127,8 @@ def app():
            save_data(data, "data.json")
             
             
-   with tab2:
-  # if page == options[1]:
+   
+   if page == options[1]:
        data = load_data("data.json")
        st.subheader("Archiv")
 
@@ -147,8 +145,8 @@ def app():
        df.set_index("row_name", inplace=True)
 
        st.table(df)
-   with tab3:     
-   # if page == options[2]:
+      
+    if page == options[2]:
 
         # Define the dictionary of substances and their corresponding hazard symbols
         substances = {
