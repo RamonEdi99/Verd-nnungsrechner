@@ -131,9 +131,9 @@ def app():
             
             
    
-       if page == options[1]:
-           data = load_data("data.json")
-           st.subheader("Archiv")
+   if page == options[1]:
+       data = load_data("data.json")
+       st.subheader("Archiv")
 
        # Convert the JSON to a list of dictionaries
        fin = []
@@ -149,7 +149,7 @@ def app():
 
        st.table(df)
       
-       if page == options[2]:
+   if page == options[2]:
 
         # Define the dictionary of substances and their corresponding hazard symbols
         substances = {
