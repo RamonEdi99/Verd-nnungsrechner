@@ -101,11 +101,11 @@ def app():
    st.title("Verdünnungsrechner für Deine Verdünnungsreihe")
 
    # Sidebar
-   options = ["Neue Berechnung", "Archiv", "Gefahrensymbole"]
+   #options = ["Neue Berechnung", "Archiv", "Gefahrensymbole"]
 
-   page = st.sidebar.radio("Seite auswählen", 
-                           options
-                           )
+  # page = st.sidebar.radio("Seite auswählen", 
+ #                          options
+  #                         )
 
    data = load_data("data.json")
 
@@ -147,8 +147,8 @@ def app():
        df.set_index("row_name", inplace=True)
 
        st.table(df)
-       
-   if page == options[2]:
+   with tab3:     
+   # if page == options[2]:
 
         # Define the dictionary of substances and their corresponding hazard symbols
         substances = {
