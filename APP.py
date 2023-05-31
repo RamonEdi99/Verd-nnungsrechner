@@ -132,8 +132,8 @@ def app():
             
    
        if page == options[1]:
-       data = load_data("data.json")
-       st.subheader("Archiv")
+           data = load_data("data.json")
+           st.subheader("Archiv")
 
        # Convert the JSON to a list of dictionaries
        fin = []
